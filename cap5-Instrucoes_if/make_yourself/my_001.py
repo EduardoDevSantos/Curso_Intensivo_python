@@ -36,4 +36,22 @@ bag = ['caneta','caderno','livro']
 if 'caneta' in bag and 'caderno' in bag and 'livro' in bag:
     print("Você está pronto para ir para sair.")
 
-# 
+pizza_fav = 'Frango com catupiri'
+print("Minha pizza favorita é de mussarela ? eu acho que não")
+print(pizza_fav == 'Mussarela')
+
+fav_book = 'O nome do vento'
+print("Meu livro favorito é o nome do Vento!!")
+print(fav_book == 'O nome do vento')
+
+fav_music = 'Mirrors'
+print("Minha musica favorita é perfume.")
+print('perfume' == fav_music);
+
+fav_anime = 'One piece'
+print("One piece é o melhor anime do mundo!!")
+print(fav_anime == 'One piece')
+
+fav_movie = 'Gigantes de aço'
+print("Gigantes de aço não é meu filme preferido.")
+print(fav_movie != 'Gigantes de aço')
