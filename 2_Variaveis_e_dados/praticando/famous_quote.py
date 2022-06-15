@@ -1,0 +1,1 @@
+print('Cristiano Ronaldo uma vez disse:\n\t"Sem disciplina, o talento não serve pra nada."')
