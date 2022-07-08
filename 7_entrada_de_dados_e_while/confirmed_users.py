@@ -1,6 +1,3 @@
-from multiprocessing.dummy import current_process
-
-
 unconfirmed_users = ['alice','brian','candace']
 confirmed_users = []
 while unconfirmed_users:
