@@ -1,4 +1,5 @@
 def make_album(artname,talbum,nfaixas=''):
+    """Cria um dicionário com informações de um album musical."""
     album = {'artista':artname,'titulo':talbum}
     if nfaixas:
         album['faixas'] = nfaixas
