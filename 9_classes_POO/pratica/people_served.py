@@ -18,6 +18,12 @@ class Restaurant():
         else:
             print("-->O restaurante " + self.restaurant_name.title() +
             " está fechado.")
+    def set_number_served(self,number_served):
+        self.number_served = number_served
+        print("Já servimos " + str(number_served) + " pessoas hoje.")
+    def increment_number_served(self,peoples):
+        self.number_served+=peoples
+        print("Já servimos " + str(self.number_served) + " pessoas hoje.")
 my_restaurant = Restaurant('ostradamus restaurante','brasileira',True)
 # print("O nome do restaurante é: " + my_restaurant.restaurant_name.title() + ".")
 # print("O tipo de culinária é: " + my_restaurant.cuisine_type.title() + ".")
@@ -28,5 +34,7 @@ restaurant = Restaurant('zucco ristorante','italiana',True)
 restaurant.describe_restaurant()
 restaurant.open_restaurant()
 restaurant.number_served = 100
-print("Este restaurante serve até " + str(restaurant.number_served) 
-+ " pessoas.")
+print("Já servimos " + str(restaurant.number_served) 
++ " pessoas hoje.")
+restaurant.set_number_served(250)
+restaurant.increment_number_served(30)
