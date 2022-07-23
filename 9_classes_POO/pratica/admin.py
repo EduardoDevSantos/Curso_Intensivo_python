@@ -27,15 +27,6 @@ class User():
         self.login_attemps = 0
 
 
-class Admin(User):
-    def __init__(self, first_name, last_name, age, fav_animal, job):
-        super().__init__(first_name, last_name, age, fav_animal, job)
-        self.privileges = ['can add post', 'can delete post', 'can ban user',
-                           'can stop the server', 'can see the database']
-
-    
-
-
 class Privilegies():
     def __init__(self):
         self.privileges = ['can add post', 'can delete post', 'can ban user',
@@ -46,8 +37,15 @@ class Privilegies():
         for privilege in self.privileges:
             print("-->" + privilege.title())
 
+
+class Admin(User):
+    def __init__(self, first_name, last_name, age, fav_animal, job):
+        super().__init__(first_name, last_name, age, fav_animal, job)
+        self.show_privileges = Privilegies()
+
+
 im_admin = Admin('eduardo', 'santos', '17', 'cachorro', 'CEO')
 im_admin.increment_login_attemps()
 im_admin.describe_user()
 im_admin.greet_user()
-im_admin.show_admin_privileges()
+im_admin.show_privileges.show_admin_privileges()
