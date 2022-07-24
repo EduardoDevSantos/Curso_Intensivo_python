@@ -1,6 +1,3 @@
-from this import d
-
-
 class Restaurant():
     """Simula a descrição de um restaurante."""
     def __init__(self,restaurant_name, cuisine_type, open_or_closed):

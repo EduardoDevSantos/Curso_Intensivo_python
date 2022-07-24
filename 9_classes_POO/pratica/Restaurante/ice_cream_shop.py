@@ -7,6 +7,7 @@ class Restaurant():
         self.open_or_closed = open_or_closed
     def describe_restaurant(self):
         """Mostra o nome do restaurante e o tipo de cozinha."""
+        print("°Informações sobre o restaurante: ")
         print("-->" + self.restaurant_name.title())
         print("-->Tipo de culinária: " + self.cuisine_type.title() + ".")
     def open_restaurant(self):
@@ -17,8 +18,12 @@ class Restaurant():
         else:
             print("-->O restaurante " + self.restaurant_name.title() +
             " está fechado.")
-my_restaurant = Restaurant('ostradamus restaurante','brasileira',True)
-# print("O nome do restaurante é: " + my_restaurant.restaurant_name.title() + ".")
-# print("O tipo de culinária é: " + my_restaurant.cuisine_type.title() + ".")
-my_restaurant.describe_restaurant()
-my_restaurant.open_restaurant()
+class IceCreamStand(Restaurant):
+    """Simula a descrição de uma sorveteria."""
+    def __init__(self,restaurant_name, cuisine_type, open_or_closed):
+        super().__init__(restaurant_name, cuisine_type, open_or_closed)
+        self.flavors = ['chocolate','morango','baunilha','bombom','napolitano']
+    def show_flavors(self):
+        print("°Aqui está a lista dos sabores disponiveis: ")
+        for flavor in self.flavors:
+            print("-->" + flavor.title())
