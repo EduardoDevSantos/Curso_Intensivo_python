@@ -1,6 +1,3 @@
-from webbrowser import get
-
-
 def get_formatted_name(first_name,last_name,middle_name=''):
     """Devolve um nome completo formatado de modo elegante"""
     if middle_name: 
