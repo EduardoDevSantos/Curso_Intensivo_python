@@ -1,0 +1,4 @@
+Em python podemos criar programas de diversos tipos
+Em python podemos criar uma calculadora
+Em python podemos criar uma web aplicattion
+Em python podemos transformar qualquer ideia em codigo
