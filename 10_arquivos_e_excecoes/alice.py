@@ -1,6 +1,3 @@
-from msilib.schema import Directory
-
-
 filename = 'alice.txt'
 directory = '10_arquivos_e_excecoes/'
 try:
