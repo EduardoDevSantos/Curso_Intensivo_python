@@ -1,6 +1,3 @@
-import string
-
-
 filename = '10_arquivos_e_excecoes/learning_python.txt'
 with open(filename) as file_object:
     text = file_object.read()

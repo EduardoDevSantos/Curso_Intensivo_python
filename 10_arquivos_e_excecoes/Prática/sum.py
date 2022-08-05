@@ -11,5 +11,5 @@ while True:
         b = int(b)
         result = a + b
         print("\n"+str(a) + "+" + str(b) + "=" + str(result))
-    except:
+    except NameError:
         print("Você digitou algo errado, tente novamente por favor.")

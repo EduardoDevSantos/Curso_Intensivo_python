@@ -1,4 +1,7 @@
 {
     "python.linting.pylintEnabled": true,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "python.analysis.extraPaths": [
+        "./10_arquivos_e_excecoes/Prática/cats_dogs"
+    ]
 }

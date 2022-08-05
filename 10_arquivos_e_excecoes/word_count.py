@@ -16,4 +16,3 @@ def count_words(filename):
 filenames = ['alice.txt','little_women.txt','moby_dick.txt','siddhartha.txt']
 for filename in filenames:
     count_words(filename)
-
